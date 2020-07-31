@@ -1,0 +1,13 @@
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.exe
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.deps.json
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.runtimeconfig.json
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.runtimeconfig.dev.json
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.dll
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\bin\Debug\netcoreapp3.1\serverProject.pdb
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.csprojAssemblyReference.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.AssemblyInfoInputs.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.AssemblyInfo.cs
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.csproj.CoreCompileInputs.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.dll
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.pdb
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\serverProject\serverProject\obj\Debug\netcoreapp3.1\serverProject.genruntimeconfig.cache

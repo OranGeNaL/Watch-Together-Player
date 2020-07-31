@@ -1,0 +1,10 @@
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\bin\Debug\playgroungClient.exe.config
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\bin\Debug\playgroungClient.exe
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\bin\Debug\playgroungClient.pdb
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.csprojAssemblyReference.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.Form1.resources
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.Properties.Resources.resources
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.csproj.GenerateResource.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.csproj.CoreCompileInputs.cache
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.exe
+C:\Users\pshen\Documents\GitHub\Watch-Together-Player\playgroungClient\playgroungClient\obj\Debug\playgroungClient.pdb
