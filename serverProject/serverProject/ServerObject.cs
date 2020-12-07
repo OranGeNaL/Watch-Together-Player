@@ -20,7 +20,7 @@ namespace serverProject
         {
             server.Start();
             Thread onlineInfoThread = new Thread(new ThreadStart(OnlineInfo));
-            //onlineInfoThread.Start();
+            onlineInfoThread.Start();
 
             while (true)
             {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace playgroungClient
 {
     [Serializable]
-    class SendInfo
+    public class SendInfo
     {
         public string message { get; set; }
         public long filesize { get; set; }

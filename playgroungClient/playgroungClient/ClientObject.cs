@@ -58,11 +58,31 @@ namespace playgroungClient
                 si.filename = fi.Name;
 
 
+
                 client.Connect(IP, PORT);
                 networkStream = client.GetStream();
                 SendRequest(si.message);
 
-                if(GetResponse() == Request.OK)
+                BinaryFormatter bf = new BinaryFormatter();
+
+                if (GetResponse() == Request.OK)
+                {
+                    //SendRequest(si.filesize.ToString());
+                    bf.Serialize(networkStream, si);
+
+                    if (GetResponse() == Request.OK)
+                    {
+                        FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+
+                        byte[] buff = new byte[fs.Length];
+                        fs.Read(buff, 0, buff.Length);
+                        networkStream.Write(buff, 0, buff.Length);
+                        parent.SendCompleteMessage("Передача файла завершена.");
+                    }
+                }
+
+
+                /*if(GetResponse() == Request.OK)
                 {
                     SendRequest(si.filename);
                     if (GetResponse() == Request.OK)
@@ -78,7 +98,7 @@ namespace playgroungClient
                             parent.SendCompleteMessage("Передача файла завершена.");
                         }
                     }
-                }
+                }*/
             }
             catch(Exception ex)
             {

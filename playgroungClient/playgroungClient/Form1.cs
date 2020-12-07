@@ -33,7 +33,8 @@ namespace playgroungClient
 
         private void button1_Click(object sender, EventArgs e)
         {
-            client.SendMessage(textBox1.Text);
+            //client.SendMessage(textBox1.Text);
+            SendInfo sendInfo = new SendInfo();
         }
 
         private void button2_Click(object sender, EventArgs e)

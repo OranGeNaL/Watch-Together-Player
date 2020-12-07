@@ -1,8 +1,8 @@
-﻿using playgroungClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Sockets;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
@@ -49,6 +49,39 @@ namespace serverProject
                     if (GetResponse() == Request.SENDING_FILE)
                     {
                         SendInfo si = new SendInfo();
+                        BinaryFormatter bf = new BinaryFormatter();
+                        SendRequest(Request.OK);
+
+                        si = (SendInfo)bf.Deserialize(networkStream);
+
+                        Console.WriteLine("Начато получение файла.");
+                        Console.WriteLine("Имя файла: {0}", si.filename);
+                        Console.WriteLine("Размер файла: {0}", si.filesize);
+
+                        FileStream fs = new FileStream(si.filename, FileMode.Create, FileAccess.ReadWrite,
+                            FileShare.ReadWrite, (int)si.filesize);
+                        long bytesGot = 0;
+                        do
+                        {
+                            byte[] temp = new byte[262144];
+                            int bytesThisTick = networkStream.Read(temp, 0, temp.Length);
+                            bytesGot += bytesThisTick;
+                            fs.Write(temp, 0, bytesThisTick);
+
+                            Console.WriteLine("Получено {0}% файла.", Math.Round((double)bytesGot / si.filesize * 100));
+
+                            if (fs.Length == si.filesize)
+                            {
+                                fs.Close();
+                                break;
+                            }
+                        }
+                        while (bytesGot < si.filesize);
+                        Console.WriteLine("Передача файла успешно завершена!");
+                    }
+                    /*if (GetResponse() == Request.SENDING_FILE)
+                    {
+                        SendInfo si = new SendInfo();
                         SendRequest(Request.OK);
                         Console.WriteLine("Начато получение файла.");
                         si.filename = GetResponse();
@@ -78,7 +111,7 @@ namespace serverProject
                         }
                         while (bytesGot < si.filesize);
                         Console.WriteLine("Передача файла успешно завершена!");
-                    }
+                    }*/
                 }
                 catch(Exception ex)
                 {
